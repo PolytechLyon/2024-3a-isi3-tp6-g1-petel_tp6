@@ -12,6 +12,7 @@ public class Application {
      * @param args  app's arguments.
      */
     public static void main(String... args) {
+
         new BikeSimulator().run();
     }
 }

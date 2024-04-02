@@ -14,7 +14,7 @@ public class Wheel implements MobileObject {
 
     private final Logger logger = new ConsoleLogger("Wheel");
     private final Clock clock = new Clock();
-    private final Bike drive;
+    private final Vehicle drive;
 
     /**
      * Constructor.
