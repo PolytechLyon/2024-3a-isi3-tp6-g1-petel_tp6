@@ -36,12 +36,30 @@ déjà cette fonctionnalité, et se situe dans le même package. Pour casser le 
 ## Exercices 5
 Voir le code 
 
+On conserve les lignes communes de code dans la classe mère, et on implémente la méthode abstraite pour réaliser le 
+traitement spécifique dans chacune des classes.
+
 ## Exercices 6
 La différence entre le pattern **Singleton** et **Factory** réside dans le fait qu'on puisse instancier plusieurs objets 
-avec **Factory** tandis que **Singleton** permet de créer une instance unique.*
+avec **Factory** tandis que **Singleton** permet de créer une instance unique.
 
 ## Exercices 7
+Voir le code 
+
+On implémente simplement la nouvelle classe en la faisant hériter de **NamedLogger**. On fait attention de ne pas oublier 
+la méthode qui permet de décorer notre objet concret.
 
 ## Exercices 8
+
+La classe **Context** réalise le patron de conception **Façade**. En effet, la classe **Context** permet une utilisation
+simplifié de la classe **ServiceLoader**, en ne réalisant que les methodes *inject()* et *injectAll()*.
+
+Dans le fichier *fr.polytech.sim.cycling.Bike*, on peut ajouter la liste des objets que l'on peut injecter dans notre contexte.
+Il est donc naturellement possible d'insérer plusieurs lignes si on souhaite ajouter plusieurs objets dans notre contexte.
+C'est d'ailleurs ce que l'on fait dans l'exercice suivant. 
+
+## Exercice 9 
+
+La méthode *injectAll()* utilise le patron de conception **Iterator**.
 
 
